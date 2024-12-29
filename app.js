@@ -29,7 +29,7 @@ loader.load('./piano.glb',
     function (error) {}
 );
 
-const renderer = new THREE.WebGLRenderer({alpha: true});
+const renderer = new THREE.WebGLRenderer({alpha: true, antialias: true });
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.getElementById('container3D').appendChild(renderer.domElement);
 
