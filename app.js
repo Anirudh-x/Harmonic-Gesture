@@ -70,15 +70,16 @@ let arrPositionModel = [
         rotation: { x: 0.6, y: 2.5, z: 0 },
     },
     {
-        id: "contact",
-        position: { x: 0, y: 0.5, z: -20 },
-        rotation: { x: 0.3, y: 1.5, z: 0.2 },
+        id: "launch",
+        position: { x: 0, y: -0.1, z: 10 },
+        rotation: { x: 1.5, y: 1.55, z: 0 },
     },
-    {
-        id: "footer",
-        position: { x: 0, y: 0, z: 0 },
-        rotation: { x: 0, y: 0, z: 0 },
-    },
+
+    // {
+    //     id: "footer",
+    //     position: { x: 0, y: 0, z: 0 },
+    //     rotation: { x: 0, y: 0, z: 0 },
+    // },
 ];
 
 const modelMove = () => {
