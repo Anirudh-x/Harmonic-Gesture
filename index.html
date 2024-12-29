@@ -5,44 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
-    />
   </head>
+
   <body>
-    <div id="main">
-      <div id="page">
-        <h1>Home Page</h1>
-        <canvas></canvas>
+
+    <header>
+      <div class="content-fit">
+        <div class="logo">Harmonic Gesture</div>
+        <nav>
+          <ul>
+            <a href="#banner"><li>Home</li></a>
+            <a href="#intro"><li>Intro</li></a>
+            <a href="#description"><li>Description</li></a>
+            <a href="#contact"><li>Contacts</li></a>
+          </ul>
+        </nav>
       </div>
-      <div id="page1">
-        <h1>Page 1</h1>
+    </header>
+
+    <div class="section" id="banner">
+      <div class="content-fit">
+        <div class="title" data-before="WEBSITEDESIGN">Harmonic Gesture</div>
       </div>
-      <div id="page2">
-        <h1>Page 2</h1>
-      </div>
-      <div id="page3">
-        <h1>Page 3</h1>
+      <!-- <img
+        src="img/flower.png"
+        class="decorate"
+        alt=""
+        style="width: 50vw; bottom: 0; right: 0"
+      />
+      <img
+        src="img/leaf.png"
+        class="decorate"
+        alt=""
+        style="width: 30vw; bottom: 0; left: 0"
+      /> -->
+    </div>
+
+    <div class="section" id="intro">
+      <div class="content-fit">
+        <div class="des">
+          <div class="title">Intro</div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus voluptas a porro libero recusandae quae, aut ratione,
+            incidunt laborum, necessitatibus similique enim doloremque ex.
+            Laudantium obcaecati aspernatur doloremque illo beatae, maxime hic
+            itaque consequatur nisi accusantium veritatis, voluptatem ratione!
+            Placeat numquam nisi reiciendis harum quibusdam tempore eaque
+            deleniti accusantium, veniam quae eos sed, asperiores laborum
+            corporis odit mollitia consequatur adipisci? Quibusdam quis eos
+            debitis non esse blanditiis laudantium rerum odit tempora? Corrupti
+            maiores velit consequuntur cupiditate reiciendis similique provident
+            repudiandae.
+          </p>
+        </div>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <div class="section" id="description">
+      <div class="content-fit">
+        <div class="des">
+          <div class="title">Description</div>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Voluptatibus voluptas a porro libero recusandae quae, aut ratione,
+            incidunt laborum, necessitatibus similique enim doloremque ex.
+            Laudantium obcaecati aspernatur doloremque illo beatae, maxime hic
+            itaque consequatur nisi accusantium veritatis, voluptatem ratione!
+            Placeat numquam nisi reiciendis harum quibusdam tempore eaque
+            deleniti accusantium, veniam quae eos sed, asperiores laborum
+            corporis odit mollitia consequatur adipisci? Quibusdam quis eos
+            debitis non esse blanditiis laudantium rerum odit tempora? Corrupti
+            maiores velit consequuntur cupiditate reiciendis similique provident
+            repudiandae.
+          </p>
+        </div>
+      </div>
+     
+    </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <div class="section" id="contact">
+      <div class="content-fit">
+        <div class="des">
+          <div class="title">CONTACT</div>
+          <table>
+            <tr>
+              <td>Email</td>
+              <td>harmonicgesture@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Phone</td>
+              <td>+91 987654321</td>
+            </tr>
+            <tr>
+              <td>Website</td>
+              <td>hg.com</td>
+            </tr>
+            <tr>
+              <td>Instagram</td>
+              <td>@hermonicgesture</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-
-    <script src="script.js"></script>
+    <footer id="footer"></footer>
   </body>
+
+  <div id="container3D"></div>
+  <script type="module" src="app.js"></script>
 </html>
