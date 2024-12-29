@@ -12,17 +12,19 @@ camera.position.z = 13;
 
 const scene = new THREE.Scene();
 let piano;
-let mixer;
 const loader = new GLTFLoader();
 loader.load('./piano.glb',
     function (gltf) {
         piano = gltf.scene;
-        // piano.position.y = -4
-        // piano.rotation.y = 1.5
+        piano.position.x = 2.9
+        piano.position.y = -0.05
+        piano.position.z = 1
+        piano.rotation.x = 1.5
+        piano.rotation.y = 0
+        piano.rotation.z = 0
         scene.add(piano);
 
         mixer = new THREE.AnimationMixer(piano);
-        // mixer.clipAction(gltf.animations[0]).play();
         modelMove();
     },
     function (xhr) {},
@@ -45,15 +47,17 @@ scene.add(topLight);
 const reRender3D = () => {
     requestAnimationFrame(reRender3D);
     renderer.render(scene, camera);
-    // if(mixer) mixer.update(0.02);
 };
 reRender3D();
 
 let arrPositionModel = [
     {
         id: 'banner',
-        position: {x: 0, y: -3, z: 0},
-        rotation: {x: 0, y: 1.5, z: 0}
+        position: {x: 2.9, y: -0.05, z: 1},
+        rotation: {x: 1.5, y: 0, z: 0}
+        // id: 'banner',
+        // position: {x: 0, y: -3, z: 0},
+        // rotation: {x: 0, y: 1.5, z: 0}
     },
     {
         id: "intro",
@@ -82,7 +86,7 @@ const modelMove = () => {
     let currentSection;
     sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= window.innerHeight / 3) {
+        if (rect.top <= window.innerHeight / 2) {
             currentSection = section.id;
         }
     });
@@ -95,14 +99,14 @@ const modelMove = () => {
             x: new_coordinates.position.x,
             y: new_coordinates.position.y,
             z: new_coordinates.position.z,
-            duration: 2,
+            duration: 1,
             ease: "power1.out"
         });
         gsap.to(piano.rotation, {
             x: new_coordinates.rotation.x,
             y: new_coordinates.rotation.y,
             z: new_coordinates.rotation.z,
-            duration: 2,
+            duration: 3,
             ease: "power1.out"
         })
     }
