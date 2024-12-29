@@ -1,0 +1,46 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+}
+
+#page {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+}
+
+#page1 {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(187, 187, 187);
+}
+
+#page2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(83, 83, 83);
+}
+
+#page3 {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(19, 19, 19);
+}
+
+canvas {
+  max-width: 100vw;
+  max-height: 100vh;
+  position: relative;
+  z-index: 9;
+}
