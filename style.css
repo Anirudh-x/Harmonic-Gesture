@@ -51,9 +51,8 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10px;
   backdrop-filter: blur(20px);
-  z-index: 100;
+  z-index: 200;
   background-color: #1b1b1b11;
   background-image: repeating-linear-gradient(
     to right,
@@ -131,35 +130,20 @@ header a {
   z-index: 200;
 }
 
-#contact .content-fit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
+#launch {
+  background-color: white;
 }
-#contact table {
-  width: min(800px, 90vw);
-  padding-top: 2em;
-  font-size: 2em;
-  margin: auto;
+
+#launch button {
+  height: 3.5rem;
+  width: 6rem;
+  z-index: 150;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 4rem;
 }
-#contact table td {
-  padding-block: 0.5em;
-  border-bottom: 1px dashed #445022;
-}
-#contact table td:nth-child(1) {
-  text-align: left;
-  font-weight: 500;
-}
-#contact table td:nth-child(2) {
-  text-align: right;
-  font-weight: 200;
-}
-#contact .sign {
-  font-family: "Bimbo", sans-serif;
-  font-size: 10em;
-}
+
 
 #banner {
   background-color: black;
@@ -170,24 +154,23 @@ header a {
 #description {
   background-color: rgb(160, 160, 160);
 }
-#contact {
-  background-color: rgb(189, 189, 189);
-}
 
-/* footer {
-  padding-block: 4em;
+
+footer {
+  position: relative;
   bottom: 0;
   width: 100%;
-  z-index: 10px;
   backdrop-filter: blur(20px);
-  z-index: 100;
-  background-color: #1b1b1b11;
-  background-image: repeating-linear-gradient(
-    to right,
-    transparent 0 500px,
-    #eee1 500px 501px
-  );
-} */
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3px;
+  padding: 1.5rem 0;
+}
+
 
 #container3D {
   position: fixed;
